@@ -1,0 +1,247 @@
+/* Basic Reset & Body Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* Navigation */
+nav {
+    background: #343a40; /* Dark grey */
+    color: #fff;
+    padding: 15px 0;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #007bff; /* Blue accent */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #343a40;
+    margin-top: 0;
+    margin-bottom: 0.75em;
+}
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.8em; border-bottom: 1px solid #eee; padding-bottom: 0.3em; }
+h3 { font-size: 1.4em; }
+
+/* Forms */
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+button, input[type="submit"], .button {
+    display: inline-block;
+    background-color: #007bff; /* Primary blue */
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none; /* For .button class on <a> tags */
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover, input[type="submit"]:hover, .button:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+.button-danger, .small-button-danger {
+    background-color: #dc3545; /* Red */
+}
+.button-danger:hover, .small-button-danger:hover {
+    background-color: #c82333; /* Darker red */
+}
+
+.small-button, .small-button-danger {
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+
+/* Messages */
+.error {
+    color: #721c24; /* Dark red */
+    background-color: #f8d7da; /* Light red */
+    border: 1px solid #f5c6cb; /* Reddish border */
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.success {
+    color: #155724; /* Dark green */
+    background-color: #d4edda; /* Light green */
+    border: 1px solid #c3e6cb; /* Greenish border */
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+table th, table td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6; /* Light grey border */
+}
+
+table th {
+    background-color: #e9ecef; /* Lighter grey for header */
+    font-weight: 600;
+    color: #495057;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f9fa; /* Zebra striping for rows */
+}
+
+table tr:hover {
+    background-color: #e2e6ea;
+}
+
+/* Settings Page Sections */
+.settings-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}
+.settings-section h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Dashboard Sections */
+.dashboard-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}
+.dashboard-section h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.dashboard-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+.dashboard-section ul li {
+    margin-bottom: 8px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    color: #6c757d; /* Muted grey */
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.9em;
+}
+
+/* reCAPTCHA badge - hide if using invisible reCAPTCHA and triggering manually */
+.grecaptcha-badge {
+    /* visibility: hidden; */ /* Uncomment if you are manually invoking reCAPTCHA */
+}
